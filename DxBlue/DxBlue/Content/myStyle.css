@@ -1,0 +1,114 @@
+﻿/*.dx-datagrid .dx-data-row > td.bullet {
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
+/*.dx-header-row {
+    background-color: dodgerblue;
+}*/
+/*.dx-datagrid-headers {
+    background-color: dodgerblue;
+    font-weight: bold;
+    color: white;
+}*/
+.dashboardHeaderRow {
+    /*background-color: lightseagreen;*/
+    background: #17a2b8 linear-gradient(180deg,#3ab0c3,#17a2b8) repeat-x !important;
+    color: white;
+    font-weight: bold;
+}
+.dx-datagrid-headers .dx-header-row {
+    /*background-color: lightseagreen;*/
+    background: #17a2b8 linear-gradient(180deg,#3ab0c3,#17a2b8) repeat-x !important;
+    color: white;
+    font-weight: bold;
+}
+
+.dx-datagrid .dx-header-filter {
+    color: yellow;
+}
+
+.dx-datagrid .dx-header-filter-empty {
+    color: white !important;
+}
+
+.textArea {
+    resize: none;
+}
+/*.modal-header {
+    max-height: 600px;
+}*/
+
+.tt-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.nav-link1 {
+    display: block;
+    background-color: yellow;
+}
+
+.active-menu-bg {
+    background-color: blue;
+    color: white;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+
+.dx-pivotgrid .dx-pivotgrid-expanded {
+    background-color: lightseagreen;
+    font-weight: bold;
+}
+
+    .dx-pivotgrid .dx-pivotgrid-expanded > span {
+        color: black;
+    }
+
+.dx-pivotgrid .dx-expand-icon-container > span {
+    color: white;
+}
+
+.dx-pivotgrid .dx-pivotgrid-horizontal-headers tr:first-child:first-child {
+    font-weight: bold;
+    background-color: lightseagreen;
+}
+
+.dx-pivotgrid-horizontal-headers tr:first-child:first-child td > span {
+    color: white;
+}
+
+.dx-scrollable-content table tbody tr td {
+    background-color: white;
+}
+
+
+.dx-pivotgrid .dx-total {
+    font-weight: bold;
+}
+
+    .dx-pivotgrid .dx-total > span {
+        color: darkblue;
+    }
+
+.dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-last-cell > span {
+    color: black;
+}
+
+
+
+.dx-pivotgrid .dx-grandtotal {
+    background-color: azure;
+    color: white;
+    font-weight: bold;
+}
+
+    .dx-pivotgrid .dx-grandtotal > span {
+        color: darkblue;
+    }
+/*.select2-results__option[aria-selected=true] {
+    display: none;
+}*/

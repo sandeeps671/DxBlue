@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DxBlue.consistent.views.root.Site1" %>
+
+<%@ Import Namespace="DxBlue" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <asp:PlaceHolder runat="server">
+        <%: Styles.Render("~/bundles/renderCss") %>
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <%: Scripts.Render("~/bundles/devexjs") %>
+        <%: Scripts.Render("~/bundles/plugins") %>
+        <%: Scripts.Render("~/bundles/globalScripts") %>
+    </asp:PlaceHolder>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false" async defer></script>
+    <script src="/Scripts/Shared/userLocation.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body class="hold-transition sidebar-mini text-sm sidebar-collapse">
+    <input type="hidden" id="hUserIdRoot" runat="server" class="hUserIdRoot" />
+    <input type="hidden" id="hUserTypeRoot" runat="server" class="hUserTypeRoot" />
+    <div class="wrapper">
+        <%--<nav class="main-header navbar navbar-expand navbar-light text-sm" style="background-color: lightseagreen" id="mySidebar">--%>
+        <nav class="main-header navbar navbar-expand navbar-light text-sm bg-gradient-cyan" id="mySidebar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="<%= CGlobal.GoToHome() %>" class="nav-link text-white">Home</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                        data-toggle="dropdown" data-hover="dropdown" data-close-others="true" href="#" aria-expanded="false">
+                        <span class="d-none d-sm-inline text-white mx-auto"><b><%=DisplayName %></b></span>&nbsp;
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href='<%=ResolveClientUrl("~/views/account/user_profile") %>' class="dropdown-item">
+                            <i class="far fa-id-card text-success mr-3"></i>My Profile
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="<%=ResolveClientUrl("~/views/account/logout")%>" class="dropdown-item">
+                            <i class="fa fa-fw fa-power-off text-danger mr-3"></i>Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
+            <a href="<%= CGlobal.GoToHome() %>" class="brand-link">
+                <span class="brand-text font-weight-bold text-blue"><%=CGlobal.GetSiteName() %></span>
+            </a>
+            <div class="sidebar">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="<%=profilePic %>" class="img-circle elevation-2" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="<%= CGlobal.GoToHome() %>" class="d-block"><b style="color: black"><%=DisplayName %></b></a>
+                    </div>
+                </div>
+                <nav class="mt-2">
+                    <ul id="sideMenu" class="nav nav-pills nav-sidebar flex-column text-sm nav-flat nav-compact nav-child-indent nav-legacy" data-widget="treeview" role="menu" data-accordion="false">
+                        <%=RenderMenus()%>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <div class="content-wrapper pl-1 pr-1">
+            <form id="formRoot" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="CPH" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.1.0
+            </div>
+            <strong>Copyright &copy; 2021-2022 <a href="<%= CGlobal.GetSiteAddress() %>"><%=CGlobal.GetSiteName() %></a>.</strong> All rights reserved.
+        </footer>
+        <div class="modal fade" id="orderInfoModal" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-dialog-scrollable" role="document">
+                    <div class="modal-header bg-info py-2">
+                        <h6 class="modal-title text-white">Order Detail</h6>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        //$(".modal").on('hidden.bs.modal.modal-body', function (e) {
+        //    let modalId = $(this)[0].id
+        //    //$(this).data('bs.modal', null);
+        //    $("#" + modalId).find(".modal-body").remove();
+        //    $("#" + modalId).find(".modal-footer").remove();
+        //    e.stopPropagation();
+        //});
+    </script>
+</body>
+</html>

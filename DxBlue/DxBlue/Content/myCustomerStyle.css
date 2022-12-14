@@ -1,0 +1,57 @@
+﻿/*.dx-datagrid .dx-data-row > td.bullet {
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
+/*.dx-header-row {
+    background-color: dodgerblue;
+}*/
+/*.dx-datagrid-headers {
+    background-color: dodgerblue;
+    font-weight: bold;
+    color: white;
+}*/
+.dx-datagrid-headers .dx-header-row {
+    background-color: #6f42c1;
+    color: white;
+    font-weight: bold;
+}
+
+.dx-datagrid .dx-header-filter {
+    color: yellow;
+}
+
+.dx-datagrid .dx-header-filter-empty {
+    color: white !important;
+}
+
+.dx-scrollable-scroll-content {
+    background-color: #6f42c1;
+}
+
+.textArea {
+    resize: none;
+}
+/*.modal-header {
+    max-height: 600px;
+}*/
+
+
+.tt-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.nav-link1 {
+    display: block;
+    background-color: yellow;
+}
+
+.active-menu-bg {
+    background-color: blue;
+    color: white;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+}

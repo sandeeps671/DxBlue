@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="8ddbb628-9532-4a89-949b-6f510aa69a3e" ChangeDateTime="01/01/2022 11:13:53">
+    <Property Name="ElementName" Value="[dbo].[tbl_DsrBill].[tbl_dsrBill]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_DsrBill]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="99f30fc7-869c-4a67-944a-f6b1857c4030" ChangeDateTime="02/13/2022 09:37:20">
+    <Property Name="ElementName" Value="[dbo].[TM_MenuMaster].[IsCustomer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TM_MenuMaster]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsConsistent" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5c2a28ad-beea-4836-ac20-e898b8dfe672" ChangeDateTime="02/19/2022 08:04:50">
+    <Property Name="ElementName" Value="[dbo].[tbl_Role].[IsCustomer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Role]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb76eff3-f6af-404d-9fc4-72e4a137fbcc" ChangeDateTime="02/19/2022 08:23:24">
+    <Property Name="ElementName" Value="[dbo].[TM_MenuMaster].[IsConsistent]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TM_MenuMaster]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f263f66-0527-4818-9716-97cdb74bf42c" ChangeDateTime="03/17/2022 18:12:40">
+    <Property Name="ElementName" Value="[dbo].[tbl_productGroupMaster].[rv]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_productGroupMaster]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RV" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f25e793a-458c-4a4e-a91a-898f840f7087" ChangeDateTime="04/09/2022 14:39:01">
+    <Property Name="ElementName" Value="[dbo].[tbl_duePaymentAdvance].[tbl_duePaymentAdvance]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_duePaymentAdvance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DsrId" />
+  </Operation>
+</Operations>
