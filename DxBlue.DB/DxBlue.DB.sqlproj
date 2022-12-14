@@ -66,4 +66,8 @@
   <ItemGroup>
     <RefactorLog Include="DxBlue.DB.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\dbo.tbl_area.Table.sql" />
+    <Build Include="Procedures\dbo.sPM_AreaMgmt.StoredProcedure.sql" />
+  </ItemGroup>
 </Project>
