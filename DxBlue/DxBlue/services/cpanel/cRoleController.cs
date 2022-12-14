@@ -1,7 +1,6 @@
 ﻿using DxBlue.BL.cpanel;
 using DxBlue.Models;
 using DxBlue.Models.cpanel;
-using DxBlue;
 using System.Collections.Generic;
 using System.Web.Http;
 

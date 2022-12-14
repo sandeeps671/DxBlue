@@ -1,7 +1,6 @@
 ﻿using DxBlue.BL.accounts;
 using DxBlue.Models;
 using DxBlue.Models.accounts;
-using DxBlue;
 using System.Collections.Generic;
 using System.Web.Http;
 using System.Net.Http;

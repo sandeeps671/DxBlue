@@ -8,7 +8,7 @@
 @ResultId INT=0 OUTPUT    
 )      
 AS      
-BEGIN      
+BEGIN       
 SET NOCOUNT ON;      
 
 IF(@ModeSql='LIST_AREAS')      
